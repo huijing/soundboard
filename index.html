@@ -1,1 +1,50 @@
-Soundboard of Awesomeness
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Soundboard of Awesomeness</title>
+  <meta name="description" content="A HTML5 soundboard for all occasions">
+  <meta name="author" content="Chen Hui Jing">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <main class="content">
+    <h1>Soundboard of Awesomeness</h1>
+
+    <audio id="why" src="sounds/why.mp3"></audio>
+    <audio id="victory" src="sounds/victory.mp3"></audio>
+    <audio id="seanangry" src="sounds/seanangry.mp3"></audio>
+    <audio id="benangry" src="sounds/benangry.mp3"></audio>
+    <audio id="punchline" src="sounds/punchline.mp3"></audio>
+
+    <ul class="soundboard">
+      <li>
+        <a href="#">
+          <span class="soundboard__button" onclick="document.getElementById('why').play()">Why</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="soundboard__button" onclick="document.getElementById('victory').play()">Victory</span>
+        </a></li>
+      <li>
+        <a href="#">
+          <span class="soundboard__button" onclick="document.getElementById('seanangry').play()">So Angry</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="soundboard__button" onclick="document.getElementById('benangry').play()">So Angry</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="soundboard__button" onclick="document.getElementById('punchline').play()">Punchline</span>
+        </a>
+      </li>
+    </ul>
+
+  </main>
+  
+</body>
+</html>
