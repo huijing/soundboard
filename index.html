@@ -1,16 +1,31 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Soundboard of Awesomeness</title>
   <meta name="description" content="A HTML5 soundboard for all occasions">
   <meta name="author" content="Chen Hui Jing">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#603cba">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="theme-color" content="#603cba">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 </head>
+
 <body>
-  <main class="content">
+  <main>
     <h1>Soundboard of Awesomeness</h1>
 
     <audio id="why" src="sounds/why.mp3"></audio>
@@ -21,35 +36,26 @@
     <audio id="airhorn" src="sounds/airhorn.mp3"></audio>
     <audio id="unbelievable" src="sounds/unbelievable.mp3"></audio>
     <audio id="excellent" src="sounds/excellent.mp3"></audio>
+    <audio id="sacrilegious" src="sounds/sacrilegious.mp3"></audio>
+    <audio id="interesting" src="sounds/interesting.mp3"></audio>
+    <audio id="error" src="sounds/error.mp3"></audio>
 
-    <ul class="soundboard">
-      <li>
-        <a href="#" class="soundboard__button" onclick="document.getElementById('why').play(); event.preventDefault();">Why</a>
-      </li>
-      <li>
-        <a href="#" class="soundboard__button" onclick="document.getElementById('victory').play(); event.preventDefault();">Victory</a>
-      </li>
-      <li>
-        <a href="#" class="soundboard__button" onclick="document.getElementById('seanangry').play(); event.preventDefault();">So Angry</a>
-      </li>
-      <li>
-        <a href="#" class="soundboard__button" onclick="document.getElementById('benangry').play(); event.preventDefault();">So Angry</a>
-      </li>
-      <li>
-        <a href="#" class="soundboard__button" onclick="document.getElementById('punchline').play(); event.preventDefault();">Punchline</a>
-      </li>
-      <li>
-        <a href="#" class="soundboard__button" onclick="document.getElementById('airhorn').play(); event.preventDefault();">Airhorn</a>
-      </li>
-      <li>
-        <a href="#" class="soundboard__button" onclick="document.getElementById('unbelievable').play(); event.preventDefault();">Unbelievable</a>
-      </li>
-      <li>
-        <a href="#" class="soundboard__button" onclick="document.getElementById('excellent').play(); event.preventDefault();">Excellent</a>
-      </li>
-    </ul>
+    <div class="buttons">
+      <button data-sound="why">Why</button>
+      <button data-sound="victory">Victory</button>
+      <button data-sound="seanangry">So Angry</button>
+      <button data-sound="benangry">So Angry</button>
+      <button data-sound="punchline">Punchline</button>
+      <button data-sound="airhorn">Airhorn</button>
+      <button data-sound="unbelievable">Unbelievable</button>
+      <button data-sound="excellent">Excellent</button>
+      <button data-sound="sacrilegious">Sacrilegious</button>
+      <button data-sound="interesting">Interesting</button>
+      <button data-sound="error">Error</button>
+    </div>
 
   </main>
-  
+  <script src="scripts.js"></script>
 </body>
+
 </html>
