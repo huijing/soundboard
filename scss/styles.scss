@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  min-width: 20em;
+  min-width: 25em;
 }
 
 main {
@@ -52,4 +52,13 @@ button:hover {
   text-decoration: none;
   color: #555;
   background: #f5f5f5;
+}
+
+@supports (display:grid) {
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+    gap: 1em;
+    justify-items: center;
+  }
 }
