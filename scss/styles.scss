@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  min-width: 25em;
+  min-width: 20em;
 }
 
 main {
@@ -18,8 +18,8 @@ main {
 
 button {
   background-image: linear-gradient(to bottom, #f7f7f7, #e7e7e7);
-  width: 14em;
-  height: 14em;
+  width: 10em;
+  height: 10em;
   margin: 3em;
   position: relative;
   text-align: center;
@@ -36,8 +36,8 @@ button::before {
   background: #fff;
   border-top: 2px solid #ddd;
   position: absolute;
-  width: 17em;
-  height: 17em;
+  width: 12.5em;
+  height: 12.5em;
   z-index: -1;
   border-radius: 50%;
   box-shadow: inset 0 8px 48px #ddd;
@@ -57,7 +57,7 @@ button:hover {
 @supports (display:grid) {
   .buttons {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
     gap: 1em;
     justify-items: center;
   }
